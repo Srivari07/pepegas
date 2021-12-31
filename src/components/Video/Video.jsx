@@ -1,7 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./Video.css";
-import trailer from "./trailer_hd.mp4";
+import trailer from "../../assets/trailer_hd.mp4";
+import thumbnail from "../../assets/thumbnail.jpg";
 
 function Video() {
   return (
@@ -10,9 +11,8 @@ function Video() {
         url={trailer}
         width="100%"
         height="448px"
+        poster={thumbnail}
         controls
-        light
-        poster=""
         onError={() => console.log("onError Callback")}
       />
       ;

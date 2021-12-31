@@ -1,17 +1,29 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore/lite";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAxn5329DS4zJA2r2WO_0VFI76xB_k29bk",
-  authDomain: "shawarma-gg79.firebaseapp.com",
-  projectId: "shawarma-gg79",
-  storageBucket: "shawarma-gg79.appspot.com",
-  messagingSenderId: "126136149292",
-  appId: "1:126136149292:web:59964828461af3780f3889",
+  apiKey: "AIzaSyD-r-v3teQ4VtZAF8UaxmMlWKejANA9mpw",
+  authDomain: "pepegas-ppgs.firebaseapp.com",
+  projectId: "pepegas-ppgs",
+  storageBucket: "pepegas-ppgs.appspot.com",
+  messagingSenderId: "250349477861",
+  appId: "1:250349477861:web:ca73a587e738fdb544590c",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
+const auth = getAuth();
+
+export {
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+};
+export default db;

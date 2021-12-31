@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Row.css";
 import axios from "../../axios";
+import Card from "../Card/Card";
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [animes, setAnimes] = useState([]);
   const base_url = "https://image.tmdb.org/t/p/original/";
+  onclick = { Card };
 
   useEffect(() => {
     async function fetchData() {
