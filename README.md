@@ -1,6 +1,6 @@
-https://user-images.githubusercontent.com/69836058/144709293-3e1c2f40-9440-42ad-a508-5cce317f8713.png
+![alt text](https://user-images.githubusercontent.com/69836058/144709293-3e1c2f40-9440-42ad-a508-5cce317f8713.png)
 
-Pepegas, an online Anime streaming platform.
+[Pepegas](https://pepegas-ppgs.web.app/), an online Anime streaming platform.
 
 WORK IN PROGRESS.
 
